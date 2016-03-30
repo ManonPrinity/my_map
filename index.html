@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="fr" manifest="offline.appcache">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>My Map</title>
+		<link rel="stylesheet" href="css/index.css"/>
+	</head>
+	<body onload="my_map.initialize()">
+		<aside id="left_aside">
+			<h1>My Map</h1>
+			<input type="button" value="Full Screen" onclick="my_map.toggle_fullscreen()" id="fullscreen_button"/>
+			<form id="direction">
+				<div>
+					<label>Point de départ :</label>
+					<input type="text" name="origin" id="origin"/>
+				</div>
+				<div>
+					<label>Destination :</label>
+					<input type="text" name="destination" id="destination"/>
+				</div>
+				<input type="button" value="Calculer l'itinéraire" onclick="my_map.draw_route()" id="route_button"/>
+				<select id="mode">
+		            <option value="DRIVING">Voiture</option>
+		            <option value="WALKING">A pied</option>
+		            <option value="TRANSIT">Transport en commun</option>
+        		</select>
+		    </form>
+
+		    
+		    <div id="panel">
+		    	
+		    </div>
+		    <a href="game.html"><input type="button" value="Teste tes Connaissances Geographique" id="route_button"/></a>
+	 	</aside>
+
+	 	<div id="map_container">
+			<div id="map">
+				
+			</div>
+		</div>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyAMvwV_N77kcO2wmTi1TddEKkpWMh6VR4E&callback=initMap">
+    </script>
+ <!-- ?sensor=true -->
+		<script src="js/index.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script> -->

@@ -1,0 +1,124 @@
+html 
+{ 
+	height: 100%;
+}
+
+body 
+{ 
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+	font-size: 0px;
+	background-image: url(../img/carte.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#left_aside
+{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	height: 100%;
+	width: 350px;
+	border: 2px solid #7e7341;
+	border-right: 10px solid #b69d2d;
+	background-color: #d9ce9e;
+	font-size: 14px;
+	overflow: auto;
+}
+
+#panel
+{
+	background-color: #dbd2ab;
+}
+
+#left_aside h1
+{
+	font-family: sans-serif;
+	font-size: 2.5em;
+    text-shadow: 2px 2px #b6b6b6;
+    text-align: center;
+}
+
+#fullscreen_button
+{
+	display: block;
+	width: calc(100% - 40px);
+	height: 40px;
+	margin: 0px 20px;
+	border: 1px solid black;
+	background-color: #efe09c;
+	cursor: pointer;
+}
+
+#left_aside form
+{
+	display: block;
+	margin: 0px 20px;
+}
+
+#left_aside form div
+{
+	display: block;
+	padding-top: 20px;
+}
+
+#left_aside form div label
+{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+#left_aside form div input
+{
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #555;
+	background-color: #e2ddc8;
+}
+
+#route_button
+{
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	border: 1px solid black;
+	background-color: #efe09c;
+	cursor: pointer;
+}
+
+#panel
+{
+	font-size: 14px;
+}
+
+#map_container 
+{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 350px); 
+	height: 100%;
+}
+
+#map
+{
+	display: block;
+	box-sizing: border-box;
+	width: 800px;
+	height: 600px;
+	border: 1px solid #333;
+	-moz-box-shadow: 10px 1px 49px 9px #643403;
+-webkit-box-shadow: 10px 1px 49px 9px #643403;
+-o-box-shadow: 10px 1px 49px 9px #643403;
+box-shadow: 10px 1px 49px 9px #643403;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#643403, Direction=95, Strength=55);
+
+}

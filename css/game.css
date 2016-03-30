@@ -1,0 +1,109 @@
+html 
+{ 
+	height: 100%;
+}
+
+body 
+{ 
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+	font-size: 0px;
+	background-image: url(../img/carte.jpg);
+	background-size: 130%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#left_aside
+{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	height: 100%;
+	width: 350px;
+	border: 2px solid #7e7341;
+	border-right: 10px solid #b69d2d;
+	background-color: #d9ce9e;
+	overflow: auto;
+}
+
+#left_aside h1
+{
+	font-family: sans-serif;
+	font-size: 35px;
+    text-shadow: 2px 2px #b6b6b6;
+    text-align: center;
+}
+
+#cities_section
+{
+	display: block;
+	width: calc(100% - 10px);
+	padding: 5px;
+}
+
+#cities_section .city
+{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px;
+	padding: 0px 20px;
+	border: 1px solid black;
+	background-color: #efe09c;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+}
+
+#cities_section .success
+{
+	background: #0f9;
+	cursor: auto;
+}
+
+#cities_section .fail
+{
+	background: #c55;
+	cursor: auto;
+}
+
+#cities_section #selected
+{
+	border: 2px solid #09f;
+}
+
+
+
+#score_section
+{
+	display: block;
+	width: 100%;
+}
+
+#map_container 
+{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 350px); 
+	height: 100%;
+}
+
+#map
+{
+	display: block;
+	box-sizing: border-box;
+	width: 800px;
+	height: 600px;
+	border: 1px solid #333;
+	-moz-box-shadow: 10px 1px 49px 9px #643403;
+-webkit-box-shadow: 10px 1px 49px 9px #643403;
+-o-box-shadow: 10px 1px 49px 9px #643403;
+box-shadow: 10px 1px 49px 9px #643403;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#643403, Direction=95, Strength=55);
+
+}

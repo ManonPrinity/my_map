@@ -1,0 +1,33 @@
+<!doctype html>
+<htmls>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Calcule d'itinéraire">
+		<title>My Map</title>
+		<link rel="stylesheet" href="css/game.css"/>
+	</head>
+	<body onload="my_map.initialize()">
+		<aside id="left_aside">
+			<h1>Map Game</h1>
+			<section id="cities_section">
+				<div onclick="select_city(this)" class="city">Paris</div>
+				<div onclick="select_city(this)" class="city">Paris</div>
+				<div onclick="select_city(this)" class="city success">Madrid</div>
+				<div onclick="select_city(this)" class="city fail">Londres</div>
+			</section>
+
+			<section id="score_section">
+				
+			</section>
+	 	</aside>
+
+		<div id="map_container">
+			<div id="map">
+				
+			</div>
+        </div>
+      
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyAMvwV_N77kcO2wmTi1TddEKkpWMh6VR4E&amp;libraries=places,visualization"></script>
+       <script type="text/javascript" src="js/game.js"></script>
+    </body>
+</html>
